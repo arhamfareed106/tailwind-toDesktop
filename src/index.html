@@ -3,10 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link href="./output.css" rel="stylesheet">
-    <title>Document</title>
+    <title>ToDesktop</title>
 </head>
 <body>
-   <nav></nav>
+    <nav class="p-3 flex bg-white justify-between items-center">
+        <!-- Brand and Logo -->
+        <a href="#" id="brand" class="flex gap-2 items-center">
+            <img class="object-cover w-12 h-12" src="./assets/asset 0.png" alt="Logo">
+            <span class="text-lg font-medium font-display">ToDesktop</span>
+        </a>
+
+        <!-- Navigation Links (visible on md and larger screens) -->
+        <div id="nav-menu" class="hidden md:flex gap-12">
+            <a href="#" class="font-medium hover:text-blue-700">Pricing</a>
+            <a href="#" class="font-medium hover:text-blue-700">Docs</a>
+            <a href="#" class="font-medium hover:text-blue-700">Changelog</a>
+            <a href="#" class="font-medium hover:text-blue-700">Blog</a>
+            <a href="#" class="font-medium hover:text-blue-700">Login</a>
+        </div>
+
+        <!-- Call-to-Action Button (visible on md and larger screens) -->
+        <button class="hidden md:flex gap-2 items-center border border-gray-300 rounded-lg px-6 py-2 hover:border-gray-600">
+            <img src="./assets/asset 1.svg" alt="Electron Developer Icon">
+            <span>Electron Developer</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <!-- Mobile Menu Button (visible on smaller screens) -->
+        <button class="p-2 md:hidden" onclick="handleMenu()">
+            <i class="fa-solid fa-bars text-gray-600"></i>
+        </button>
+
+        <!-- Mobile Navigation Dialog (hidden by default) -->
+        <div id="nav-dailog" class="fixed bg-white inset-0 p-3 hidden">
+            <!-- Mobile Nav Bar -->
+            <div id="nav-bar" class="flex justify-between items-center">
+                <!-- Brand and Logo in Mobile Menu -->
+                <a href="#" id="brand" class="flex gap-2 items-center">
+                    <img class="object-cover w-12 h-12" src="./assets/asset 0.png" alt="Logo">
+                    <span class="text-lg font-medium font-display">ToDesktop</span>
+                </a>
+                <!-- Close Menu Button -->
+                <button class="p-2" onclick="handleMenu()">
+                    <i class="fa-solid fa-xmark text-gray-600"></i>
+                </button>
+            </div>
+            <!-- Add mobile links or content here -->
+        </div>
+    </nav>
+
+    <script src="script.js"></script>
 </body>
 </html>
