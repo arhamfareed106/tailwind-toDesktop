@@ -8,7 +8,7 @@
     <title>ToDesktop</title>
 </head>
 <body>
-                <!-- navbair -->
+    <!-- Navbar -->
     <nav class="p-3 flex bg-white justify-between items-center">
         <!-- Brand and Logo -->
         <a href="#" id="brand" class="flex gap-2 items-center">
@@ -16,61 +16,68 @@
             <span class="text-lg font-medium font-display">ToDesktop</span>
         </a>
 
-        <!-- Navigation Links (visible on md and larger screens) -->
+        <!-- Navigation Links (visible on medium and larger screens) -->
         <div id="nav-menu" class="hidden md:flex gap-12">
-            <a href="#" class="font-medium hover:text-blue-700">Pricing</a>
-            <a href="#" class="font-medium hover:text-blue-700">Docs</a>
-            <a href="#" class="font-medium hover:text-blue-700">Changelog</a>
-            <a href="#" class="font-medium hover:text-blue-700">Blog</a>
-            <a href="#" class="font-medium hover:text-blue-700">Login</a>
+            <a href="#" class="font-medium hover:text-blue-700 transition">Pricing</a>
+            <a href="#" class="font-medium hover:text-blue-700 transition">Docs</a>
+            <a href="#" class="font-medium hover:text-blue-700 transition">Changelog</a>
+            <a href="#" class="font-medium hover:text-blue-700 transition">Blog</a>
+            <a href="#" class="font-medium hover:text-blue-700 transition">Login</a>
         </div>
 
-        <!-- Call-to-Action Button (visible on md and larger screens) -->
-        <button class="hidden lg:flex gap-2 items-center border border-gray-300 rounded-lg px-6 py-2 hover:border-gray-600">
+        <!-- Call-to-Action Button (visible on large screens) -->
+        <button class="hidden lg:flex gap-2 items-center border border-gray-300 rounded-lg px-6 py-2 hover:border-gray-600 transition">
             <img src="./assets/asset 1.svg" alt="Electron Developer Icon">
             <span>Electron Developer</span>
             <i class="fa-solid fa-arrow-right"></i>
         </button>
 
-        <!-- Mobile Menu Button (visible on smaller screens) -->
+        <!-- Mobile Menu Button -->
         <button class="p-2 lg:hidden" onclick="handleMenu()">
             <i class="fa-solid fa-bars text-gray-600"></i>
         </button>
+    </nav>
 
-        <!-- Mobile Navigation Dialog (hidden by default) -->
-        <div id="nav-dailog" class="hidden fixed z-10 md:hidden bg-white inset-0 p-3 ">
-            <!-- Mobile Nav Bar -->
-            <div id="nav-bar" class="flex justify-between items-center">
-                <!-- Brand and Logo in Mobile Menu -->
-                <a href="#" id="brand" class="flex gap-2 items-center">
-                    <img class="object-cover w-12 h-12" src="./assets/asset 0.png" alt="Logo">
-                    <span class="text-lg font-medium font-display">ToDesktop</span>
-                </a>
-                <!-- Close Menu Button -->
-                <button class="p-2" onclick="handleMenu()">
-                    <i class="fa-solid fa-xmark text-gray-600"></i>
-                </button>
-            </div>
-            <div class="mt-6">
-                <a href="#" class="font-medium p-3 m-3 hover:bg-gray-50 block rounded-lg">Pricing</a>
-                <a href="#" class="font-medium p-3 m-3 hover:bg-gray-50 block rounded-lg">Docs</a>
-                <a href="#" class="font-medium p-3 m-3 hover:bg-gray-50 block rounded-lg">Changlog</a>
-                <a href="#" class="font-medium p-3 m-3 hover:bg-gray-50 block rounded-lg">Blogs</a>
-                <a href="#" class="font-medium p-3 m-3 hover:bg-gray-50 block rounded-lg">Login</a>
-            </div>
-            <div class="h-[1px] bg-gray-500"></div>
-            <button class="w-full mt-6 flex gap-2 items-cente rounded-lg px-6 py-4 hover:bg-gray-50">
-                <img src="./assets/asset 1.svg" alt="Electron Developer Icon">
-                <span>Electron Developer</span>
-                <i class="fa-solid fa-arrow-right"></i>
+    <!-- Mobile Navigation Dialog -->
+    <div id="nav-dialog" class="hidden fixed z-10 bg-white inset-0 p-3 md:hidden">
+        <div class="flex justify-between items-center">
+            <a href="#" class="flex gap-2 items-center">
+                <img class="object-cover w-12 h-12" src="./assets/asset 0.png" alt="Logo">
+                <span class="text-lg font-medium font-display">ToDesktop</span>
+            </a>
+            <button class="p-2" onclick="handleMenu()">
+                <i class="fa-solid fa-xmark text-gray-600"></i>
             </button>
         </div>
-    </nav>
-            <!-- main -->
+        <div class="mt-6">
+            <a href="#" class="font-medium p-3 m-3 hover:bg-gray-50 block rounded-lg">Pricing</a>
+            <a href="#" class="font-medium p-3 m-3 hover:bg-gray-50 block rounded-lg">Docs</a>
+            <a href="#" class="font-medium p-3 m-3 hover:bg-gray-50 block rounded-lg">Changelog</a>
+            <a href="#" class="font-medium p-3 m-3 hover:bg-gray-50 block rounded-lg">Blog</a>
+            <a href="#" class="font-medium p-3 m-3 hover:bg-gray-50 block rounded-lg">Login</a>
+        </div>
+        <div class="h-[1px] bg-gray-500"></div>
+        <button class="w-full mt-6 flex gap-2 items-center rounded-lg px-6 py-4 hover:bg-gray-50">
+            <img src="./assets/asset 1.svg" alt="Electron Developer Icon">
+            <span>Electron Developer</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </div>
 
-      
+    <!-- Main Content -->
+    <main class="mt-16">
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-screen bg-gradient-to-b from-purple-50 via-orange-50 to-transparent">
+            <div class="max-w-4xl mx-auto px-6 pt-6 pb-16 flex flex-col items-center text-center sm:max-w-2xl sm:pt-12">
+                <div class="flex items-center my-6 gap-2 border border-yellow-300 bg-yellow-50 rounded-lg px-3 py-1 w-fit shadow-md hover:shadow-lg hover:-translate-y-1 transition group">
+                    <div class="w-2 h-2 bg-yellow-400 rounded-full border border-yellow-600"></div>
+                    <p class="font-display font-medium text-yellow-600">v0.21.1: <span class="text-yellow-900">Find-in-page bug fixes</span></p>
+                    <i class="fa-solid fa-arrow-right text-yellow-600 group-hover:translate-x-1 transition duration-300"></i>
+                </div>
+            </div>
+        </section>
+    </main>
 
-                               
     <script src="script.js"></script>
 </body>
 </html>
