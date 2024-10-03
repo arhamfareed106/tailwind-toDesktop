@@ -21,19 +21,23 @@
             <a href="#" class="font-medium hover:text-primary">Changelog</a>
             <a href="#" class="font-medium hover:text-primary">Blogs</a>
             <a href="#" class="font-medium hover:text-primary">Login</a>
+            <!-- Mobile Devices Button in Desktop Menu -->
+            <a href="#" class="font-medium hover:text-primary">Mobile Devices</a>
         </div>
         <div class="hidden lg:flex flex-1 justify-end">
             <button class="flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
-                <img src="./assets/asset1.svg" alt="">
+                <img src="assets/asset 0.svg" alt="">
                 <span class="font-display font-medium">Electron Developers</span>
                 <i class="fa-solid fa-arrow-right"></i>
             </button>
         </div>
 
+        <!-- Menu toggle button for mobile -->
         <button class="p-2 lg:hidden" onclick="handleMenu()">
             <i class="fa-solid fa-bars text-gray-600"></i>
         </button>
 
+        <!-- Mobile Navigation Menu -->
         <div id="nav-dialog" class="hidden fixed z-10 bg-white inset-0 p-3">
             <div id="nav-bar" class="flex justify-between">
                 <a href="#" id="brand" class="flex gap-2 items-center">
@@ -50,10 +54,12 @@
                 <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Changelog</a>
                 <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Blogs</a>
                 <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Login</a>
+                <!-- Mobile Devices Button in Mobile Menu -->
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Mobile Devices</a>
             </div>
             <div class="h-[1px] bg-gray-300"></div>
             <button class="mt-6 w-full flex gap-2 items-center px-6 py-4 rounded-lg hover:bg-gray-50">
-                <img src="./assets/asset1.svg" alt="">
+                <img src="./assets/asset 0.png" alt="">
                 <span>Electron Developers</span>
             </button>
         </div>
@@ -92,18 +98,15 @@
                 
                 <div id="buttons-container" class="mt-12 flex gap-4 flex-col sm:flex-row">
                     <button class="px-8 py-3 font-semibold rounded-lg text-white bg-primary shadow-sm hover:bg-opacity-90">Download now</button>
+                    
                     <button class="px-8 py-3 font-semibold rounded-lg bg-white border border-gray-400 hover:border-gray-800">Read Docs</button>
                 </div>
             </div>
         </div>
     </main>
 
-    <script>
-        // JavaScript function to toggle mobile menu
-        function handleMenu() {
-            const navDialog = document.getElementById('nav-dialog');
-            navDialog.classList.toggle('hidden');
-        }
-    </script>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
