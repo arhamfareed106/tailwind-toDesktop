@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}", "./index.html"], // Include all necessary paths
+  purge: ['./src/**/*.html', './src/**/*.js'], // Purge configuration for unused CSS
   theme: {
     extend: {
       fontFamily: {
         'display': ['Poppins', 'sans-serif'],
-        'body': ['Inter', 'sans-serif'], // Ensure the 'Inter' font name is capitalized.
+        'body': ['Inter', 'sans-serif'], // Ensure the 'Inter' font name is capitalized
       },
     },
   },
