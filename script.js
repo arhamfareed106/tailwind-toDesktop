@@ -138,6 +138,9 @@ dtElements.forEach(element => {
       }
     );
   });
+
+
+  
       // GSAP Animation for the moving and scaling text and logo
     document.addEventListener('DOMContentLoaded', function () {
         // Animate both text and logo together
