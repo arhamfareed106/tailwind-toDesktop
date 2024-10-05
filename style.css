@@ -31,3 +31,20 @@
         @apply text-5xl leading-normal sm:font-semibold max-w-2xl;
     }
 }
+
+
+@keyframes fadeInGrow {
+    0% {
+      transform: scale(1) translateY(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1.5) translateY(-30px);
+      opacity: 1;
+    }
+  }
+
+
+  #animatedText {
+    position: relative;
+  }

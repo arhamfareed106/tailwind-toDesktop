@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- for FontAwesome icons -->
+
     <title>Tailwind Project</title>
     <link rel="stylesheet" href="output.css">
 </head>
@@ -735,7 +739,7 @@
             </div>
         </div>
     </main>
-    <footer class="container">
+    <footer class="container mx-auto px-4">
         <div class="rounded-lg border lg:border-none lg:bg-gray-50 bg-gray-50 flex flex-col lg:flex-row-reverse items-center px-8 py-12 gap-8">
             <a href="#" class="font-light font-display">Documentation</a>
             <div class="flex gap-8 text-lg">
@@ -747,14 +751,16 @@
                 <span class="text-lg font-medium font-display">ToDesktop</span>
             </a>
         </div>
-        <div id="sub-footer" class="flex flex-col gap-6 items-center justify-center my-12">
-            <div class="flex gap-2 items-center ">
-                <img class="w-4 h-4" src="./assets/asset 54.svg" alt="Y-combinator">
-                <p class="text-sm text-gray-600">A Y Combinator company.</p>
+        <div id="sub-footer" class="flex flex-col gap-6 items-center justify-center my-12 text-center">
+            <div class="flex gap-2 items-center justify-center">
+                <!-- Optional logo here -->
+                <p class="text-sm text-gray-800 font-display font-bold" id="animatedText">Thank For Visit my website</p>
             </div>
-            <p class="text-sm text-gray-400">© 2024 ToDesktop, Inc. All rights reserved.</p>
+            <p class="text-lg font-bold text-gray-700" id="developerText">Developed by Arham Fareed. All rights reserved.</p>
+
         </div>
     </footer>
+    
 </body>
 <script src="script.js"></script>
 </html>
